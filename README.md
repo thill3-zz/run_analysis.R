@@ -30,4 +30,4 @@ Overview
   We can limit processing needs by reducing the size of the dataset. We consider only the columns including the terms "mean" and "std" (standard deviation).
   At the same time we remove columns with duplicate variable names for two reasons - 1) they interfere with the later analysis, and 2) they are not labelled as "mean" or "std" variables.
   The group_by() command allows us to group the data according to Activity (what the person is doing) and Subject (who the person is).
-  Once the data is grouped the summarise_all(data,mean) command generate the mean of each set of values for each set of Activity/Subject pairs.
+  Once the data is grouped the summarise_all(data,mean) command generates the mean of each set of values for each set of Activity/Subject pairs.
