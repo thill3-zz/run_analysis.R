@@ -1,21 +1,18 @@
-#https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
-
 #You should create one R script called run_analysis.R that does the following.
 
-#X - 1Merges the training and the test sets to create one data set.
-#X - 2Extracts only the measurements on the mean and standard deviation for each 
+# 1Merges the training and the test sets to create one data set.
+#2 Extracts only the measurements on the mean and standard deviation for each 
 #measurement.
-        #New guess. Every column that says "mean" or "std" on it.
-#X - 3Uses descriptive activity names to name the activities in the data set
-#X - 4Appropriately labels the data set with descriptive variable names.
-#X - 5From the data set in step 4, creates a second, independent tidy data set with 
+#3 Uses descriptive activity names to name the activities in the data set
+#4 Appropriately labels the data set with descriptive variable names.
+#5 From the data set in step 4, creates a second, independent tidy data set with 
 #the average of each variable for each activity and each subject.
 
 #Step 0 - load data
 fileUrl <- "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
-if(!file.exists("./data/SamsungGalaxy5.csv")) {
+if(!file.exists("./SamsungGalaxy5.zip")) {
         print("Downloading file.")
-        download.file(fileUrl, destfile = "./data/SamsungGalaxy5.csv")
+        download.file(fileUrl, destfile = "./data/SamsungGalaxy5.zip")
 } else {
         print("File already exists and will not be downloaded.")
 }
